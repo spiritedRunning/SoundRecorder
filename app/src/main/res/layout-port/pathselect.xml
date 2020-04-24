@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF">
+    <TextView
+        android:id="@+id/mPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dip"
+        android:paddingTop="6dip"
+        android:paddingRight="6dip"
+        android:paddingBottom="6dip"
+        android:textSize="19sp"
+        android:textColor="#0000FF"
+        android:layout_alignParentTop="true">
+    </TextView>
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="6dip"
+        android:background="#FFFFFFFF"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="160dip"
+            android:layout_height="fill_parent"
+            android:text="@string/button_ok"/>
+        <Button
+            android:id="@+id/buttonCancle"
+            android:layout_width="160dip"
+            android:layout_height="fill_parent"
+            android:text="@string/button_cancel"/>
+    </LinearLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonlayout"
+        android:layout_below="@id/mPath">
+    </ListView>
+</RelativeLayout>
